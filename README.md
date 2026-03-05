@@ -37,16 +37,22 @@ Once your app is created, go to the **Settings** of the app.
 
 ## Usage
 
-Simply run the script. It uses your example Finnish Melodic Death Metal Wikipedia url by default:
+Simply run the script. It uses an example Finnish Melodic Death Metal Wikipedia url by default:
 
 ```bash
 python main.py
 ```
 
-*Note: The first time you run this, it will open your web browser asking you to authorize the app with your Spotify account. After you log in and agree, you'll be redirected to a localhost URL. Copy the full URL from your browser's address bar and paste it back into the terminal if prompted.*
+*Note: The first time you run this, it will open your web browser asking you to authorize the app with your Spotify account. After you log in and agree, you'll be redirected to a localhost URL. Copy the full URL from your browser's address bar and paste it back into the terminal.*
 
 **Using a custom URL**:
-You can pass any Wikipedia Category URL as an argument:
+You can pass any Wikipedia Category URL as an argument, and the script will automatically parse the URL to create a descriptive, **private** playlist for you (e.g., "Spotipy swedish synth-pop groups bands"):
 ```bash
-python main.py "https://en.wikipedia.org/wiki/Category:Swedish_death_metal_musical_groups"
+python main.py "https://en.wikipedia.org/wiki/Category:Swedish_synth-pop_groups"
+```
+
+**Override Playlist Name:**
+You can also pass a second argument to manually name the playlist:
+```bash
+python main.py "https://en.wikipedia.org/wiki/Category:Swedish_synth-pop_groups" "My Custom Name"
 ```
