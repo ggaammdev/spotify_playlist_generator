@@ -97,7 +97,7 @@ def create_spotify_playlist(bands, playlist_name="Wiki Generated Playlist"):
     print("\nSearching for bands and gathering top tracks...")
     for band in bands:
         # Search directly for tracks by the artist (bypasses removed 'top-tracks' endpoint)
-        result = sp.search(q=f"artist:{band}", type='track', limit=2)
+        result = sp.search(q=f"artist:{band}", type='track', limit=5)
         tracks = result.get('tracks', {}).get('items', [])
         
         if not tracks:
