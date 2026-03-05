@@ -1,0 +1,14 @@
+# Credentials and secrets
+creds.txt
+.env
+
+# Virtual environments and dependencies
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Caches
+.cache
+.pytest_cache/
